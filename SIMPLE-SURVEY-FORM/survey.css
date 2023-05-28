@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  list-style-type: none;
+  color: #9A463D;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #483C32;
+
+}
+
+.container {
+  width: 600px;
+  border: 1px #9A463D solid;
+  border-radius: 10px;
+  margin: 30px auto;
+  box-shadow: -10px 20px 40px grey;
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+
+.container:hover {
+  transform: scale(1.2);
+}
+
+.banner {
+  padding: 20px;
+  background-image:linear-gradient(to left bottom, rgb(199, 210, 254), rgb(71, 85, 105), rgb(199, 210, 254));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+  color: whitesmoke;
+}
+
+.banner h1 {
+  width: 40%;
+}
+
+/* FORM STYLING */
+form {
+  padding: 20px 30px;
+}
+
+input {
+  padding: 7px;
+}
+
+.title {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.techs-list {
+  display: flex;
+  gap: 80px;
+  justify-content: start;
+}
+
+/* CONTAINER */
+.developer-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-bottom: 1px #9A463D dotted;
+  padding: 15px 0;
+}
+
+.techs {
+  padding: 20px 0;
+  border-bottom: 1px #9A463D dotted;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex * {
+  width: 48%;
+}
+
+/* SURVEY QUESTION */
+
+.survey .title {
+  margin-top: 15px;
+}
+
+.questions {
+  margin: 15px 0;
+}
+.questions p {
+  margin: 5px 0;
+}
+
+.questions input {
+  margin-left: 8px;
+}
+
+/* BUTTON STYLING */
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons * {
+  width: 48%;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 25px;
+  color: #9A463D;
+  background-color: whitesmoke;
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    font-weight: bold;
+  }
+};
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    font-weight: bold;
+  }
+};

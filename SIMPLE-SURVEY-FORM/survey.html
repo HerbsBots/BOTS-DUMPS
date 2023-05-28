@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="survey.css" />
+    <title>SIMPLE SURVEY FORM</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner">
+        <h1>Simple Survey Form</h1>
+        <span><img src="bg-img2.png" alt="" width="100px" /></span>
+      </div>
+
+      <form action="">
+        <!-- DEV DETAILS -->
+        <div class="developer-details">
+          <p class="title">Developer Detail</p>
+          <div class="dev-detail flex">
+            <input type="text" placeholder="Full Name" />
+            <input type="text" placeholder="Country" />
+          </div>
+          <div class="dev-detail2 flex">
+            <input type="tel" maxlength="10" placeholder="Phone" />
+            <input type="email" placeholder="Email" />
+          </div>
+
+          <!-- GENDER -->
+          <div class="gender">
+            <span>Gender : </span>
+            <input type="radio" name="gender" id="male" />
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" />
+            <label for="male">Female</label>
+          </div>
+        </div>
+
+        <!-- TECH LIST -->
+        <div class="techs">
+          <p class="title">Tech Skills</p>
+          <div class="web-development">
+            <ul class="techs-list">
+              <div class="first-col">
+                <li>
+                  <input type="checkbox" id="html" />
+                  <label for="html">HTML</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="css" />
+                  <label for="css">CSS</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="javascript" />
+                  <label for="javascript">JavaScript</label>
+                </li>
+              </div>
+              <div class="second-col">
+                <li>
+                  <input type="checkbox" id="bootstrap" />
+                  <label for="bootstrap">Bootstrap</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="tailwind" />
+                  <label for="tailwind">Tailwind</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="sass" />
+                  <label for="sass">SASS/SCSS</label>
+                </li>
+              </div>
+              <div class="third-col">
+                <li>
+                  <input type="checkbox" id="react-js" />
+                  <label for="react-js">React JS</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="angular" />
+                  <label for="angular">Angular</label>
+                </li>
+                <li>
+                  <input type="checkbox" id="vue-js" />
+                  <label for="vue-js">Vue JS</label>
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+
+        <!-- SURVEY QUESTIONS -->
+        <div class="survey">
+          <p class="title">Questions</p>
+          <div class="questions question-1">
+            <p>1. Do you copy codes from ChatGPT for your projects?</p>
+            <input type="radio" id="q1-y" value="Yay" name="q1" />
+            <label for="q1-y">Yay</label>
+            <input type="radio" id="q1-n" value="Nay" name="q1" />
+            <label for="q1-n">Nay</label>
+          </div>
+          <div class="questions question-2">
+            <p>
+              2. What are the chances of Artificial Intelligence replacing
+              humans?
+            </p>
+            <input type="radio" id="q2-y" value="Yay" name="q2" />
+            <label for="q2-y">Yay</label>
+            <input type="radio" id="q2-n" value="Nay" name="q2" />
+            <label for="q2-n">Nay</label>
+          </div>
+          <div class="questions question-3">
+            <p>
+              3. Would you gladly advice developers to always copy codes from
+              ChatGPT?
+            </p>
+            <input type="radio" id="q3-y" value="Yay" name="q3" />
+            <label for="q3-y">Yay</label>
+            <input type="radio" id="q3-n" value="Nay" name="q3" />
+            <label for="q3-n">Nay</label>
+          </div>
+          <div class="questions question-3">
+            <p>4. Have you used other type of AI tools?</p>
+            <input type="radio" id="q4-y" value="Yay" name="q4" />
+            <label for="q4-y">Yay</label>
+            <input type="radio" id="q4-n" value="Nay" name="q4" />
+            <label for="q4-n">Nay</label>
+          </div>
+          <div class="questions question-5">
+            <p>5. Rate ChatGPT from average to excellent?</p>
+            <input type="radio" id="average" value="Average" name="q5" />
+            <label for="average">Average</label>
+
+            <input type="radio" id="good" value="Good" name="q5" />
+            <label for="good">Good</label>
+
+            <input type="radio" id="verygood" value="Very Good" name="q5" />
+            <label for="verygood">Very Good</label>
+
+            <input type="radio" id="excellent" value="Excellent" name="q5" />
+            <label for="excellent">Excellent</label>
+          </div>
+        </div>
+        <div class="buttons">
+          <button type="submit">Submit</button>
+          <button type="submit">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
